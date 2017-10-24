@@ -20,3 +20,17 @@ class Rect {
     get top() { return this.pos.y - this.size.y / 2; }
     get bottom() { return this.pos.y + this.size.y / 2; }
 }
+
+class Ball extends Rect {
+    constructor() {
+        super(10, 10);
+        this.velocity = new Vector;
+    }
+}
+
+class Player extends Rect {
+    constructor() {
+        super(20, 100);
+        this.score = 0;
+    }
+}
